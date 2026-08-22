@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Verma - Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #111111;
+        }
+
+        
+        header {
+            height: 88px;
+            background-color: #0b2854;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+        }
+
+        .logo h1 {
+            font-size: 30px;
+            margin-bottom: 4px;
+        }
+
+        .logo p {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            padding-bottom: 12px;
+        }
+
+        nav ul li a:hover,
+        nav ul li:first-child a {
+            color: #ffd600;
+            border-bottom: 4px solid #ffd600;
+        }
+
+        
+        .hero {
+            min-height: 325px;
+            background-color: #eef7ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 18%;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .hero-text {
+            max-width: 560px;
+        }
+
+        .hero-text h1 {
+            color: #102d58;
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .hero-text h2 {
+            color: #1460c0;
+            font-size: 27px;
+            margin-bottom: 12px;
+        }
+
+        .hero-text p {
+            font-size: 19px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background-color: #0b2854;
+            color: white;
+            padding: 11px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .cv-button:hover {
+            background-color: #1460c0;
+        }
+
+        .profile-image {
+            width: 285px;
+            height: 285px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 2px 8px #999;
+        }
+        main {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 28px 0 40px;
+        }
+
+        .top-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            color: #102d58;
+            font-size: 21px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon {
+            color: #1460c0;
+            font-size: 25px;
+        }
+
+        .about p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        
+
+        .skills ul {
+            padding-left: 20px;
+        }
+
+        .skills li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        
+        .education table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .education th,
+        .education td {
+            border: 1px solid #bbb;
+            padding: 9px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .education th {
+            font-weight: bold;
+            background-color: #fafafa;
+        }
+
+        
+
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 35px;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 14px;
+            min-height: 125px;
+        }
+
+        .project-card h3 {
+            color: #102d58;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 9px;
+            border: 1px solid #ccc;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .contact textarea {
+            height: 65px;
+            resize: none;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .send-button {
+            background-color: #0b2854;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .reset-button {
+            background-color: #ddd;
+            color: #111;
+            border: none;
+            padding: 10px 25px;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .social {
+            margin-top: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .linkedin {
+            color: #0a66c2;
+        }
+
+        .github {
+            color: #000;
+        }
+
+        .gmail {
+            color: #d93025;
+        }
+
+        
+        footer {
+            height: 55px;
+            background-color: #0b2854;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        @media (max-width: 900px) {
+
+            header {
+                padding: 15px 25px;
+                height: auto;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 30px;
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+
+            main {
+                padding: 30px;
+            }
+
+            .top-section,
+            .bottom-section {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Aman Verma</h1>
+            <p>Web Developer</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>Hi, I'm Aman Verma</h1>
+
+            <h2>Web Developer</h2>
+
+            <p>
+                I am a passionate web developer with a strong interest
+                in building clean, responsive and user-friendly websites.
+                I love turning ideas into real world applications.
+            </p>
+
+            <a href="#" class="cv-button">Download CV</a>
+
+        </div>
+
+        <img
+            src="https://via.placeholder.com/285"
+            alt="Profile Picture"
+            class="profile-image"
+        >
+
+    </section>
+
+
+   
+
+    <main>
+
+        <!-- ABOUT, SKILLS, EDUCATION -->
+
+        <div class="top-section">
+
+            <!-- ABOUT -->
+
+            <section class="about" id="about">
+
+                <h2 class="section-title">
+                    <span class="icon">♟</span>
+                    About Me
+                </h2>
+
+                <p>
+                    I am a quick learner and a team player. I enjoy
+                    solving problems and learning new technologies.
+                    My goal is to become a full stack developer and
+                    work on impactful projects.
+                </p>
+
+            </section>
+
+
+            <!-- SKILLS -->
+
+            <section class="skills" id="skills">
+
+                <h2 class="section-title">
+                    <span class="icon">&lt;/&gt;</span>
+                    Skills
+                </h2>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Responsive Design</li>
+                </ul>
+
+            </section>
+
+
+            <!-- EDUCATION -->
+
+            <section class="education" id="education">
+
+                <h2 class="section-title">
+                    <span class="icon">🎓</span>
+                    Education
+                </h2>
+
+                <table>
+
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+
+                    <tr>
+                        <td>B.Tech (CSE)</td>
+                        <td>ABC Engineering College</td>
+                        <td>2022</td>
+                        <td>8.6 CGPA</td>
+                    </tr>
+
+                    <tr>
+                        <td>12th (PCM)</td>
+                        <td>XYZ Public School</td>
+                        <td>2018</td>
+                        <td>85%</td>
+                    </tr>
+
+                    <tr>
+                        <td>10th</td>
+                        <td>XYZ Public School</td>
+                        <td>2016</td>
+                        <td>90%</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+        </div>
+
+
+        <!-- PROJECTS + CONTACT -->
+
+        <div class="bottom-section">
+
+            <!-- PROJECTS -->
+
+            <section id="projects">
+
+                <h2 class="section-title">
+                    <span class="icon">💼</span>
+                    Projects
+                </h2>
+
+                <div class="projects-container">
+
+                    <div class="project-card">
+
+                        <h3>1. Portfolio Website</h3>
+
+                        <p>
+                            A personal portfolio website built using
+                            HTML and Bootstrap.
+                        </p>
+
+                        <a href="#">View Project</a>
+
+                    </div>
+
+
+                    <div class="project-card">
+
+                        <h3>2. To-Do List App</h3>
+
+                        <p>
+                            A simple to-do list web app to add,
+                            remove and manage tasks.
+                        </p>
+
+                        <a href="#">View Project</a>
+
+                    </div>
+
+
+                    <div class="project-card">
+
+                        <h3>3. Weather App</h3>
+
+                        <p>
+                            A weather application that shows
+                            real-time weather using API.
+                        </p>
+
+                        <a href="#">View Project</a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="social">
+
+                    <h2 class="section-title">
+                        <span class="icon">🔗</span>
+                        Connect with me
+                    </h2>
+
+                    <div class="social-links">
+
+                        <a href="#" class="linkedin">in</a>
+
+                        <a href="#" class="github">●</a>
+
+                        <a href="#" class="gmail">✉</a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT -->
+
+            <section class="contact" id="contact">
+
+                <h2 class="section-title">
+                    <span class="icon">✉</span>
+                    Contact Me
+                </h2>
+
+                <form>
+
+                    <label>Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                    >
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <label>Message</label>
+
+                    <textarea
+                        placeholder="Type your message..."
+                    ></textarea>
+
+                    <div class="buttons">
+
+                        <button type="submit" class="send-button">
+                            Send Message
+                        </button>
+
+                        <button type="reset" class="reset-button">
+                            Reset
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2024 Aman Verma. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
