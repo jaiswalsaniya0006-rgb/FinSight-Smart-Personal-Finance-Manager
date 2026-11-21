@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSight - Mobile App UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="page-header">
+    <h1>FinSight</h1>
+    <p>Smart Personal Finance Manager</p>
+    <span>Mobile App - Static UI Design</span>
+</header>
+
+<main class="screens">
+
+    <!-- FRAME 1: HOME DASHBOARD -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <div class="brand">
+                    <div class="logo">F</div>
+                    <div>
+                        <h3>FinSight</h3>
+                        <small>SMART FINANCE</small>
+                    </div>
+                </div>
+                <span class="notification">♧</span>
+            </div>
+
+            <div class="welcome">
+                <small>WELCOME BACK</small>
+                <h2>Hello, Saniya!</h2>
+                <p>Here's your financial overview.</p>
+            </div>
+
+            <div class="balance-card">
+                <p>Total Balance</p>
+                <h1>₹16,500</h1>
+                <div class="balance-row">
+                    <div>
+                        <small>↗ Income</small>
+                        <b>₹45,000</b>
+                    </div>
+                    <div>
+                        <small>↘ Expenses</small>
+                        <b>₹28,500</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card spending-card">
+                <div>
+                    <p>Monthly Spending</p>
+                    <h2>₹28,500</h2>
+                    <small class="green">81% of budget used</small>
+                </div>
+                <div class="circle">81%</div>
+            </div>
+
+            <div class="card safe-card">
+                <div>
+                    <p>Safe to Spend</p>
+                    <h2>₹550/day</h2>
+                    <small class="green">You're on track!</small>
+                </div>
+                <span class="big-icon">✦</span>
+            </div>
+
+            <h3 class="section-title">Quick Actions</h3>
+
+            <div class="quick-actions">
+                <div><span>＋</span><small>Add Expense</small></div>
+                <div><span>↗</span><small>Add Income</small></div>
+                <div><span>◎</span><small>Set Budget</small></div>
+            </div>
+
+            <div class="section-heading">
+                <h3>Recent Transactions</h3>
+                <small class="green">See all</small>
+            </div>
+
+            <div class="transaction">
+                <div class="transaction-icon">🍔</div>
+                <div class="transaction-info">
+                    <b>Food & Dining</b>
+                    <small>Today · Food</small>
+                </div>
+                <strong class="red">-₹350</strong>
+            </div>
+
+            <div class="transaction">
+                <div class="transaction-icon">🛍️</div>
+                <div class="transaction-info">
+                    <b>Shopping</b>
+                    <small>Yesterday</small>
+                </div>
+                <strong class="red">-₹1,200</strong>
+            </div>
+
+            <div class="transaction">
+                <div class="transaction-icon">🚕</div>
+                <div class="transaction-info">
+                    <b>Transport</b>
+                    <small>Yesterday</small>
+                </div>
+                <strong class="red">-₹250</strong>
+            </div>
+
+            <nav class="bottom-nav">
+                <div class="active"><span>⌂</span><small>Home</small></div>
+                <div><span>☷</span><small>Transactions</small></div>
+                <div><span>▥</span><small>Analytics</small></div>
+                <div><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">01. Home Dashboard</p>
+    </section>
+
+
+    <!-- FRAME 2: TRANSACTIONS -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <h2>Transactions</h2>
+                <span class="notification">＋</span>
+            </div>
+
+            <p class="muted">Track all your money activities.</p>
+
+            <div class="search-box">⌕ Search transactions</div>
+
+            <div class="filters">
+                <span class="selected">All</span>
+                <span>Income</span>
+                <span>Expense</span>
+            </div>
+
+            <div class="month-heading">
+                <h3>November 2026</h3>
+                <small class="muted">This month</small>
+            </div>
+
+            <div class="summary-row">
+                <div class="card">
+                    <small>Income</small>
+                    <h3 class="green">₹45,000</h3>
+                </div>
+                <div class="card">
+                    <small>Expenses</small>
+                    <h3 class="red">₹28,500</h3>
+                </div>
+            </div>
+
+            <h3 class="section-title">Today</h3>
+
+            <div class="transaction">
+                <div class="transaction-icon">🍔</div>
+                <div class="transaction-info">
+                    <b>Food & Dining</b>
+                    <small>12:30 PM · UPI</small>
+                </div>
+                <strong class="red">-₹350</strong>
+            </div>
+
+            <div class="transaction">
+                <div class="transaction-icon">☕</div>
+                <div class="transaction-info">
+                    <b>Coffee</b>
+                    <small>10:15 AM · Cash</small>
+                </div>
+                <strong class="red">-₹120</strong>
+            </div>
+
+            <h3 class="section-title">Yesterday</h3>
+
+            <div class="transaction">
+                <div class="transaction-icon">🛍️</div>
+                <div class="transaction-info">
+                    <b>Shopping</b>
+                    <small>6:30 PM · UPI</small>
+                </div>
+                <strong class="red">-₹1,200</strong>
+            </div>
+
+            <div class="transaction">
+                <div class="transaction-icon">🚕</div>
+                <div class="transaction-info">
+                    <b>Transport</b>
+                    <small>3:00 PM · UPI</small>
+                </div>
+                <strong class="red">-₹250</strong>
+            </div>
+
+            <h3 class="section-title">12 November</h3>
+
+            <div class="transaction">
+                <div class="transaction-icon">💰</div>
+                <div class="transaction-info">
+                    <b>Salary</b>
+                    <small>9:00 AM · Bank</small>
+                </div>
+                <strong class="green">+₹35,000</strong>
+            </div>
+
+            <nav class="bottom-nav">
+                <div><span>⌂</span><small>Home</small></div>
+                <div class="active"><span>☷</span><small>Transactions</small></div>
+                <div><span>▥</span><small>Analytics</small></div>
+                <div><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">02. Transactions</p>
+    </section>
+
+
+    <!-- FRAME 3: ADD TRANSACTION -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <span class="back">‹</span>
+                <h2>Add Transaction</h2>
+                <span></span>
+            </div>
+
+            <p class="muted">Record your income or expenses.</p>
+
+            <div class="type-selector">
+                <div class="type-active">Expense</div>
+                <div>Income</div>
+            </div>
+
+            <div class="amount-area">
+                <small>ENTER AMOUNT</small>
+                <h1>₹ 0.00</h1>
+                <p class="muted">Enter transaction amount</p>
+            </div>
+
+            <div class="form-group">
+                <label>Transaction Title</label>
+                <div class="input-box">e.g. Grocery shopping</div>
+            </div>
+
+            <div class="form-group">
+                <label>Category</label>
+                <div class="input-box">🍔 Food & Dining <span>⌄</span></div>
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <div class="input-box">17 November 2026 <span>▣</span></div>
+            </div>
+
+            <div class="form-group">
+                <label>Payment Method</label>
+                <div class="input-box">UPI <span>⌄</span></div>
+            </div>
+
+            <div class="form-group">
+                <label>Notes (Optional)</label>
+                <div class="input-box">Add a note...</div>
+            </div>
+
+            <div class="save-button">Save Transaction</div>
+
+            <nav class="bottom-nav">
+                <div class="active"><span>⌂</span><small>Home</small></div>
+                <div><span>☷</span><small>Transactions</small></div>
+                <div><span>▥</span><small>Analytics</small></div>
+                <div><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">03. Add Transaction</p>
+    </section>
+
+
+    <!-- FRAME 4: ANALYTICS -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <h2>Analytics</h2>
+                <span class="notification">⋮</span>
+            </div>
+
+            <p class="muted">Understand your spending habits.</p>
+
+            <div class="filters">
+                <span>Week</span>
+                <span class="selected">Month</span>
+                <span>Year</span>
+            </div>
+
+            <div class="card">
+                <small class="muted">Total Expenses</small>
+                <h1>₹28,500</h1>
+                <small class="green">↓ 8.5% compared to last month</small>
+                <div class="chart">
+                    <div style="height:45%"><small>W1</small></div>
+                    <div style="height:70%"><small>W2</small></div>
+                    <div style="height:55%"><small>W3</small></div>
+                    <div style="height:90%"><small>W4</small></div>
+                </div>
+            </div>
+
+            <h3 class="section-title">Income vs Expenses</h3>
+
+            <div class="summary-row">
+                <div class="card">
+                    <small>Income</small>
+                    <h3 class="green">₹45,000</h3>
+                </div>
+                <div class="card">
+                    <small>Expenses</small>
+                    <h3 class="red">₹28,500</h3>
+                </div>
+            </div>
+
+            <h3 class="section-title">Spending by Category</h3>
+
+            <div class="card category-card">
+                <div class="category-row">
+                    <span>🍔 Food</span><b>₹6,400</b>
+                </div>
+                <div class="progress"><div style="width:80%"></div></div>
+
+                <div class="category-row">
+                    <span>🛍️ Shopping</span><b>₹5,600</b>
+                </div>
+                <div class="progress"><div style="width:70%"></div></div>
+
+                <div class="category-row">
+                    <span>🚕 Transport</span><b>₹2,000</b>
+                </div>
+                <div class="progress"><div style="width:40%"></div></div>
+
+                <div class="category-row">
+                    <span>📄 Bills</span><b>₹2,100</b>
+                </div>
+                <div class="progress"><div style="width:30%"></div></div>
+            </div>
+
+            <div class="card insight">
+                <small class="green">SPENDING INSIGHT</small>
+                <p>Your highest spending category this month is Food & Dining.</p>
+            </div>
+
+            <nav class="bottom-nav">
+                <div><span>⌂</span><small>Home</small></div>
+                <div><span>☷</span><small>Transactions</small></div>
+                <div class="active"><span>▥</span><small>Analytics</small></div>
+                <div><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">04. Analytics</p>
+    </section>
+
+
+    <!-- FRAME 5: BUDGET -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <h2>My Budget</h2>
+                <span class="notification">＋</span>
+            </div>
+
+            <p class="muted">Manage your monthly spending limits.</p>
+
+            <div class="card budget-total">
+                <small>Total Monthly Budget</small>
+                <h1>₹35,000</h1>
+                <div class="budget-numbers">
+                    <span>Spent <b>₹28,500</b></span>
+                    <span>Left <b class="green">₹6,500</b></span>
+                </div>
+                <div class="progress">
+                    <div style="width:81%"></div>
+                </div>
+                <small class="muted">81% of your budget used</small>
+            </div>
+
+            <div class="section-heading">
+                <h3>Category Budgets</h3>
+                <small class="green">Edit</small>
+            </div>
+
+            <div class="card budget-item">
+                <div class="category-row">
+                    <span>🍔 Food & Dining</span>
+                    <b>₹6,400 / ₹8,000</b>
+                </div>
+                <div class="progress"><div style="width:80%"></div></div>
+                <small class="muted">₹1,600 remaining</small>
+            </div>
+
+            <div class="card budget-item">
+                <div class="category-row">
+                    <span>🚕 Transport</span>
+                    <b>₹2,000 / ₹5,000</b>
+                </div>
+                <div class="progress"><div style="width:40%"></div></div>
+                <small class="muted">₹3,000 remaining</small>
+            </div>
+
+            <div class="card budget-item">
+                <div class="category-row">
+                    <span>🛍️ Shopping</span>
+                    <b>₹5,600 / ₹8,000</b>
+                </div>
+                <div class="progress"><div style="width:70%"></div></div>
+                <small class="muted">₹2,400 remaining</small>
+            </div>
+
+            <div class="card budget-item">
+                <div class="category-row">
+                    <span>📄 Bills</span>
+                    <b>₹2,100 / ₹7,000</b>
+                </div>
+                <div class="progress"><div style="width:30%"></div></div>
+                <small class="muted">₹4,900 remaining</small>
+            </div>
+
+            <div class="add-button">＋ Create New Budget</div>
+
+            <nav class="bottom-nav">
+                <div><span>⌂</span><small>Home</small></div>
+                <div><span>☷</span><small>Transactions</small></div>
+                <div class="active"><span>▥</span><small>Analytics</small></div>
+                <div><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">05. Budget Management</p>
+    </section>
+
+
+    <!-- FRAME 6: SAVINGS GOALS -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <h2>Savings Goals</h2>
+                <span class="notification">＋</span>
+            </div>
+
+            <p class="muted">Save today for your tomorrow.</p>
+
+            <div class="card savings-summary">
+                <small>Total Savings</small>
+                <h1>₹35,000</h1>
+                <p class="green">Across all your goals</p>
+            </div>
+
+            <div class="section-heading">
+                <h3>Your Goals</h3>
+                <small class="green">See all</small>
+            </div>
+
+            <div class="card goal-card">
+                <div class="goal-heading">
+                    <div class="goal-icon">✈️</div>
+                    <div>
+                        <h3>Japan Trip</h3>
+                        <small class="muted">Travel Goal</small>
+                    </div>
+                </div>
+                <h2>₹30,000 <small class="muted">/ ₹1,00,000</small></h2>
+                <div class="progress"><div style="width:30%"></div></div>
+                <div class="goal-footer">
+                    <small class="green">30% completed</small>
+                    <small class="muted">Target: Dec 2027</small>
+                </div>
+            </div>
+
+            <div class="card goal-card">
+                <div class="goal-heading">
+                    <div class="goal-icon">🛡️</div>
+                    <div>
+                        <h3>Emergency Fund</h3>
+                        <small class="muted">Safety Goal</small>
+                    </div>
+                </div>
+                <h2>₹5,000 <small class="muted">/ ₹30,000</small></h2>
+                <div class="progress"><div style="width:17%"></div></div>
+                <div class="goal-footer">
+                    <small class="green">17% completed</small>
+                    <small class="muted">Target: Jun 2027</small>
+                </div>
+            </div>
+
+            <div class="card goal-card">
+                <div class="goal-heading">
+                    <div class="goal-icon">💻</div>
+                    <div>
+                        <h3>New Laptop</h3>
+                        <small class="muted">Personal Goal</small>
+                    </div>
+                </div>
+                <h2>₹0 <small class="muted">/ ₹50,000</small></h2>
+                <div class="progress"><div style="width:0%"></div></div>
+                <div class="goal-footer">
+                    <small class="green">0% completed</small>
+                    <small class="muted">Not started</small>
+                </div>
+            </div>
+
+            <div class="add-button">＋ Create New Goal</div>
+
+            <nav class="bottom-nav">
+                <div><span>⌂</span><small>Home</small></div>
+                <div><span>☷</span><small>Transactions</small></div>
+                <div><span>▥</span><small>Analytics</small></div>
+                <div class="active"><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">06. Savings Goals</p>
+    </section>
+
+
+    <!-- FRAME 7: PROFILE AND SETTINGS -->
+    <section class="phone">
+        <div class="screen">
+
+            <div class="topbar">
+                <h2>My Profile</h2>
+                <span class="notification">⚙</span>
+            </div>
+
+            <div class="profile-area">
+                <div class="avatar">S</div>
+                <h2>Saniya Jaiswal</h2>
+                <p class="muted">saniya@example.com</p>
+                <div class="edit-profile">Edit Profile</div>
+            </div>
+
+            <h3 class="section-title">Account</h3>
+
+            <div class="menu-item">
+                <span>💳</span>
+                <div><b>My Accounts</b><small>Manage your accounts</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>🏷️</span>
+                <div><b>Categories</b><small>Manage transaction categories</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>🔔</span>
+                <div><b>Reminders</b><small>Manage upcoming bills</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>🎯</span>
+                <div><b>Savings Goals</b><small>Track your financial goals</small></div>
+                <strong>›</strong>
+            </div>
+
+            <h3 class="section-title">Preferences</h3>
+
+            <div class="menu-item">
+                <span>🌙</span>
+                <div><b>Appearance</b><small>Dark theme</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>💱</span>
+                <div><b>Currency</b><small>Indian Rupee (INR)</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>🔒</span>
+                <div><b>Privacy & Security</b><small>Manage app privacy</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>❓</span>
+                <div><b>Help & Support</b><small>Get assistance</small></div>
+                <strong>›</strong>
+            </div>
+
+            <div class="logout">Log Out</div>
+
+            <nav class="bottom-nav">
+                <div><span>⌂</span><small>Home</small></div>
+                <div><span>☷</span><small>Transactions</small></div>
+                <div><span>▥</span><small>Analytics</small></div>
+                <div class="active"><span>♙</span><small>Profile</small></div>
+            </nav>
+
+        </div>
+        <p class="frame-name">07. Profile & Settings</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>FinSight – Smart Personal Finance Manager</p>
+    <small>Mobile Static UI Design | 2026</small>
+</footer>
+
+</body>
+</html>

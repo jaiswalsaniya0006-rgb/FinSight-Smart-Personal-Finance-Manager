@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSight - Smart Personal Finance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="logo">F</div>
+            <div>
+                <h2>FinSight</h2>
+                <small>SMART FINANCE</small>
+            </div>
+        </div>
+
+        <p class="menu-title">MENU</p>
+
+        <nav>
+            <a class="active" href="#">▦ Dashboard</a>
+            <a href="#">↔ Transactions</a>
+            <a href="#">◷ Budget</a>
+            <a href="#">▥ Analytics</a>
+            <a href="#">◎ Savings Goals</a>
+            <a href="#">◇ Categories</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="tip">
+                <h3>Manage Smarter ✦</h3>
+                <p>Small steps today, better finances tomorrow.</p>
+            </div>
+
+            <a href="#">⚙ Settings</a>
+
+            <div class="profile">
+                <div class="avatar">SJ</div>
+                <div>
+                    <strong>Personal Account</strong>
+                    <small>FinSight User</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <p class="date">YOUR FINANCES AT A GLANCE</p>
+                <h1>Welcome to FinSight ✦</h1>
+                <p class="subtitle">
+                    Here's what's happening with your money.
+                </p>
+            </div>
+
+            <button class="add-btn">＋ Add Transaction</button>
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <p>Total Income</p>
+                <h2>₹45,000</h2>
+                <span class="green">↗ 12.5% from last month</span>
+            </div>
+
+            <div class="card">
+                <p>Total Expenses</p>
+                <h2>₹28,500</h2>
+                <span class="red">↗ 4.2% from last month</span>
+            </div>
+
+            <div class="card">
+                <p>Monthly Budget</p>
+                <h2>₹35,000</h2>
+                <span class="blue">81% budget used</span>
+
+                <div class="progress">
+                    <div class="progress-blue"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <p>Safe to Spend</p>
+                <h2>₹550/day</h2>
+                <span class="green">You're on track!</span>
+            </div>
+
+        </section>
+
+        <section class="content">
+
+            <div class="panel">
+                <div class="heading">
+                    <div>
+                        <h3>Spending Overview</h3>
+                        <p>Track your income and expenses</p>
+                    </div>
+
+                    <select>
+                        <option>This Week</option>
+                        <option>This Month</option>
+                    </select>
+                </div>
+
+                <div class="legend">
+                    <span>🟦 Income</span>
+                    <span>🟪 Expenses</span>
+                </div>
+
+                <div class="chart">
+                    <div class="bar" style="height:65%"></div>
+                    <div class="bar" style="height:80%"></div>
+                    <div class="bar" style="height:48%"></div>
+                    <div class="bar" style="height:90%"></div>
+                    <div class="bar" style="height:60%"></div>
+                    <div class="bar" style="height:72%"></div>
+                    <div class="bar" style="height:40%"></div>
+                </div>
+
+                <div class="days">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+                </div>
+
+            </div>
+
+            <div class="panel">
+                <div class="heading">
+                    <div>
+                        <h3>Budget Breakdown</h3>
+                        <p>Monthly spending limits</p>
+                    </div>
+                </div>
+
+                <div class="budget-item">
+                    <div class="budget-info">
+                        <strong>🍜 Food & Dining</strong>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="food-progress"></div>
+                    </div>
+                    <small>₹6,400 of ₹8,000</small>
+                </div>
+
+                <div class="budget-item">
+                    <div class="budget-info">
+                        <strong>🚕 Transport</strong>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="transport-progress"></div>
+                    </div>
+                    <small>₹2,000 of ₹5,000</small>
+                </div>
+
+                <div class="budget-item">
+                    <div class="budget-info">
+                        <strong>🛍️ Shopping</strong>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="shopping-progress"></div>
+                    </div>
+                    <small>₹5,600 of ₹8,000</small>
+                </div>
+
+                <div class="budget-item">
+                    <div class="budget-info">
+                        <strong>⚡ Bills</strong>
+                        <span>30%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="bills-progress"></div>
+                    </div>
+                    <small>₹2,100 of ₹7,000</small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content bottom">
+
+            <div class="panel">
+                <div class="heading">
+                    <div>
+                        <h3>Recent Transactions</h3>
+                        <p>Your latest financial activity</p>
+                    </div>
+                    <a href="#">See all →</a>
+                </div>
+
+                <div class="transaction">
+                    <span>🍔</span>
+                    <div>
+                        <strong>Lunch & Coffee</strong>
+                        <small>Food & Dining · Today</small>
+                    </div>
+                    <b class="red">− ₹350</b>
+                </div>
+
+                <div class="transaction">
+                    <span>🛍️</span>
+                    <div>
+                        <strong>Online Shopping</strong>
+                        <small>Shopping · Yesterday</small>
+                    </div>
+                    <b class="red">− ₹1,200</b>
+                </div>
+
+                <div class="transaction">
+                    <span>🚕</span>
+                    <div>
+                        <strong>Cab Ride</strong>
+                        <small>Transport · Yesterday</small>
+                    </div>
+                    <b class="red">− ₹250</b>
+                </div>
+
+                <div class="transaction">
+                    <span>💰</span>
+                    <div>
+                        <strong>Monthly Salary</strong>
+                        <small>Income · 1 October</small>
+                    </div>
+                    <b class="green">+ ₹35,000</b>
+                </div>
+
+            </div>
+
+            <div class="panel">
+                <div class="heading">
+                    <div>
+                        <h3>Savings Goals</h3>
+                        <p>Track your financial goals</p>
+                    </div>
+                </div>
+
+                <div class="goal">
+                    <strong>✈️ Japan Trip</strong>
+                    <p>₹30,000 saved · 30%</p>
+                    <div class="progress">
+                        <div class="goal-blue"></div>
+                    </div>
+                    <small>Target: ₹1,00,000</small>
+                </div>
+
+                <div class="goal">
+                    <strong>🛡️ Emergency Fund</strong>
+                    <p>₹5,000 saved · 17%</p>
+                    <div class="progress">
+                        <div class="goal-green"></div>
+                    </div>
+                    <small>Target: ₹30,000</small>
+                </div>
+
+                <div class="tip-bottom">
+                    ✦ Every small saving brings you closer to your goals.
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            © 2026 FinSight · Smart money decisions start here.
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
